@@ -1,0 +1,277 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.Block-A {
+    width: 100%;
+    height: 50vh;
+    background-image: url(site.jpg);
+    background-position: center;
+    background-size: 100% auto;
+    background-attachment: fixed;
+    display: flex;
+    font-size:20px;
+    
+}
+.header{
+    padding: 2rem;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    padding-right: 1rem;
+}
+.Block-B{
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+p{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+.Block-C{
+    width: 100%;
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: minmax(300px);
+    transition: 0.5s ease-in-out;
+    color: black;
+   
+}
+.Block-C:hover{
+    background-color: rgb(102, 102, 102);
+    color:white;
+    
+
+}
+
+.animation{
+    width: 100%;
+    height: 35vh;
+    background-image: url(bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    background-attachment: fixed;
+}
+
+.Block-d{
+    width: 100%;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: minmax(300px);
+  
+}
+.oh{
+    width: 100%;
+    height: 30vh;
+    padding: 70px;
+}
+button{
+    margin-left: 150px;
+    font-size: 30px;
+    border-radius: 2px;
+    transition: 0.5s ease-in-out;
+    color: white;
+    background-color: gray;
+    
+}
+.green {
+    background-color: rgb(0, 169, 0);
+    color: white;
+}
+button:hover{
+    background-color:blue;
+    color: white;
+}
+
+.green:hover {
+    background-color: rgb(1, 102, 1);
+    color: white;
+}
+.blue {
+    background-color: rgb(44, 205, 250);
+    color: white;
+}
+.blue:hover {
+    background-color: rgb(6, 63, 250);
+    color: white;
+}
+.red {
+    background-color: rgb(253, 72, 90);
+    color: white;
+}
+.red:hover {
+    background-color: rgb(249, 4, 4);
+    color: white;
+}
+
+.anima {
+    display: none;
+}
+.pap{
+    font-size: 30px;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.girl{
+    width: 100%;
+    text-align: left;
+    margin-top: 30px;
+}
+.pic{
+    width: 100%;
+    height: 40vh;
+}
+
+.c-box{
+    margin: 10px;
+}
+
+.main{
+    width: 100%;
+    display:flex;
+}
+.box1{
+    width:100%;
+}
+
+.box2{
+    line-height: 20px;
+}
+.tech{
+    width: 100%;
+    padding: 5px;
+}
+h3{
+    padding: 20px;
+    font-size: 30px;
+    color: BLACK;
+
+}
+.hs{
+    line-height: 20px;
+    font-size: 20px;
+    text-align:left ;
+    padding: 20px;
+    color: rgb(141, 140, 140);
+
+}
+h5{
+    font-size: 22px;
+    margin-top: 2px;
+    color: red;
+}
+@media screen and (max-width: 1200px) {
+    .Block-C {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .Block-d {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .Block-B {
+        width: 70%;
+        margin-left: 150px;
+    }
+    
+    button {
+        margin-left: 100px;
+        font-size: 24px;
+    }
+    .main{
+        width: 100%;
+        display:flex;
+    }
+    
+}
+
+@media screen and (max-width: 1200px) {
+    .Block-C {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .Block-d {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .Block-B {
+        width: 90%;
+        margin: auto;
+    }
+    button {
+        font-size: 24px;
+    }
+    .main {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .Block-C {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .Block-d {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .Block-B {
+        width: 100%;
+        margin: auto;
+    }
+    .main {
+        flex-direction: column;
+    }
+    .box1 img {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .Block-C, .Block-d {
+        grid-template-columns: 1fr;
+    }
+    .Block-B {
+        width: 95%;
+    }
+    .header {
+        text-align: center;
+    }
+    a {
+        display: block;
+        padding: 10px 0;
+    }
+    h1 {
+        font-size: 22px;
+    }
+    p {
+        font-size: 18px;
+    }
+    button {
+        width: 100%;
+        margin: 10px 0;
+        font-size: 18px;
+    }
+    .pic {
+        height: auto;
+    }
+    .animation, .anima {
+        height: 25vh;
+    }
+}
+

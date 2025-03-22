@@ -21,7 +21,7 @@
 }
 
 a {
-    color: white;
+    color: rgb(196, 195, 195);
     text-decoration: none;
     padding-right: 1rem;
 }
@@ -117,7 +117,7 @@ p{
     
 }
 .box1{
-    width:80%;
+    width:100%;
 }
 
 .box2{
